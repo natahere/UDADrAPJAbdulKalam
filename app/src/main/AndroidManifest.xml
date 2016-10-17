@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.natarajan.udadrapjabdulkalam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.WebDisplayContent"
+            android:label="Content Details">
+            <intent-filter>
+                <action android:name="android.intent.action.WEBDRAPJ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.ShowContent"
+            android:label="Content Details">
+            <intent-filter>
+                <action android:name="android.intent.action.SHOWDRAPJCONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.DisplayOathList"
+            android:label="Dr Kalam Oath List">
+            <intent-filter>
+                <action android:name="android.intent.action.DISPLAYOATHLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.ShowOathImage"
+            android:label="Dr Kalam Oath">
+            <intent-filter>
+                <action android:name="android.intent.action.SHOWOATHIMAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.ShowFBPageList"
+            android:label="Dr Kalam FB Pages List">
+            <intent-filter>
+                <action android:name="android.intent.action.SHOWFBPAGELIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.ShowFavQuotes"
+            android:label="Dr Kalam Fav Quotes">
+            <intent-filter>
+                <action android:name="android.intent.action.SHOWFAVQUOTES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.natarajan.udadrapjabdulkalam.View.SendQuoteActivity"
+            android:label="Submit Dr.Kalam Quotes">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDQUOTES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.natarajan.udadrapjabdulkalam.Model.QuoteProvider"
+            android:authorities="com.natarajan.udadrapjabdulkalam.authority"
+            android:exported="true"
+            android:enabled="true"
+            android:grantUriPermissions="true"/>
+
+        <!-- Receiver -->
+
+        <receiver
+            android:name=".Widget.QuoteWidgetProvider"
+            android:label="@string/widTitle">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".Widget.QuoteWidgetRemoteViewsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>

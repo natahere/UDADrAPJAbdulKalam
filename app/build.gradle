@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    signingConfigs {
+        config {
+            keyAlias 'UdacityCapstone'
+            keyPassword 'udacity1710'
+            storeFile file('./Keystore/UdaDrAPJ.jks')
+            storePassword 'udacity12'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.natarajan.udadrapjabdulkalam"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    //Ads and App Invite - at least two Google Services
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.firebase:firebase-invites:+'
+
+    //Mat design and app compat
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+
+    //3rd party libs
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'ckm.simple:simple_sql_provider_annotation:1.0.6'
+    compile 'ckm.simple:simple_sql_provider_processor:1.0.6'
+    compile 'com.jakewharton:butterknife:7.0.1'
+}
+apply plugin: 'com.google.gms.google-services'

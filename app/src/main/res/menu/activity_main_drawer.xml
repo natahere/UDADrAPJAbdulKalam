@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/books"
+            android:title="Books" />
+
+        <item
+            android:id="@+id/nav_awards"
+            android:icon="@drawable/award"
+            android:title="Awards" />
+
+        <item
+            android:id="@+id/nav_oath"
+            android:icon="@drawable/oath"
+            android:title="Oath" />
+
+        <item
+            android:id="@+id/nav_fbpages"
+            android:icon="@drawable/social"
+            android:title="FB Pages" />
+
+        <item
+            android:id="@+id/fav_quotes"
+            android:icon="@drawable/ic_action_favorite"
+            android:title="Favorite Quotes" />
+
+        <item
+            android:id="@+id/ref_quotes"
+            android:icon="@drawable/ic_action_refresh"
+            android:title="Refresh" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_action_about"
+            android:title="Other Apps" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_action_good"
+            android:title="Rate the App" />
+
+        <item
+            android:id="@+id/nav_submit"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Submit Quote" />
+
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/oath"
+            android:title="Invite Friends" />
+    </group>
+
+
+</menu>
+

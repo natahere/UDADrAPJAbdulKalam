@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UDADrAPJAbdulKalam</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="profile"></string>
+    <string name="PREFS_NAME">drkalamUDAfile</string>
+    <string name="PREFS_FULL">drkalamUDAquotefile</string>
+
+    <string name="invitation_title">Dr Kalam App Invite</string>
+    <string name="invitation_message">Install this app on Dr.Kalam</string>
+    <string name="invitation_deep_link">https://nf3f2.app.goo.gl/eNh4</string>
+
+    <string name="widTitle">Dr.APJ Quote</string>
+
+    <string name="menu_bar">Menu Bar</string>
+    <string name="gridcontent">Quote Content in Grid</string>
+    <string name="ads">Displaying Banner Ads</string>
+    <string name="detailQuote">Detailed Quote</string>
+    <string name="favbtndetail">Favorite Floating Action Button</string>
+    <string name="gridoath">Grid containing Oaths</string>
+    <string name="enterquote">Enter the Quote in Text box below</string>
+    <string name="submit">Submit Quote</string>
+
+    <string name="Dr_APJ">Dr APJ Abdul Kalam</string>
+    <string name="india">India\'s best son ever</string>
+
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1074147660552",
+    "firebase_url": "https://udadrapjabdulkalam.firebaseio.com",
+    "project_id": "udadrapjabdulkalam",
+    "storage_bucket": "udadrapjabdulkalam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074147660552:android:c4739329914d0702",
+        "android_client_info": {
+          "package_name": "com.natarajan.udadrapjabdulkalam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074147660552-q4oqv90n3rsmuufoj3qukh4kgm6ujc6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAO5f2uu-xYiPYUgWCbRpDXRP56wFN2l0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
